@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo python -m unittest discover
+sudo python -m unittest discover --start-directory tests
