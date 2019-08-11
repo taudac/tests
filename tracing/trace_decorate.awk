@@ -32,11 +32,11 @@ function  BG_BRIGHT_MAGENTA(x) { return "\033[105m"  x "\033[0m" }
 function  BG_BRIGHT_CYAN(x)    { return "\033[106m"  x "\033[0m" }
 function  BG_BRIGHT_WHITE(x)   { return "\033[107m"  x "\033[0m" }
 
-/wm8741_startup/  { $0 = BG_BLUE($0)                             }
-/wm8741_mute/     { $0 = BG_MAGENTA($0)                          }
-/\/\* clk_*/      { $0 = BRIGHT_BLACK($0)                        }
-/\/\* i2c_*/      { $0 = BRIGHT_GREEN($0)                        }
-/\/\* gpio_*/     { $0 = BRIGHT_RED($0)                          }
+/wm8741_startup/   { $0 = BG_BLUE($0)                            }
+/wm8741_mute/      { $0 = BG_MAGENTA($0)                         }
+/\/\* clk_.*/      { $0 = BRIGHT_BLACK($0)                       }
+/\/\* i2c_.*/      { $0 = BRIGHT_GREEN($0)                       }
+/\/\* gpio_.*/     { $0 = BRIGHT_RED($0)                         }
 /pll/             { $0 = BLACK($0); $0 = BG_YELLOW($0)           }
 1
 
